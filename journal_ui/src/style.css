@@ -1,0 +1,104 @@
+@import url(./styles/buttonStyles.css);
+
+:root {
+  --dark-theme-primary-color: #0F0F0F; 
+  --dark-theme-secondary-color: #232D3F; 
+  --dark-theme-tertiary-color: #272829;
+  --dark-theme-border-color: #D8D9DA;
+  --dark-theme-primary-text-color: #ffff;
+  --dark-theme-success-color: #005B41;
+  --dark-theme-secondary-text-color: #d1ccc1;
+  --dark-theme-error-back-ground-color: #fc4141;
+  --dark-theme-error-text-color: #5f1313;
+
+  --primary-color: var(--dark-theme-primary-color);
+  --secondary-color: var(--dark-theme-secondary-color);
+  --tertiary-color: var(--dark-theme-tertiary-color);
+  --primary-text-color: var(--dark-theme-primary-text-color);
+  --primary-success-color: var(--dark-theme-success-color);
+  --border-color: var(--dark-theme-border-color);
+  --border-radius: 0.2rem;
+  --secondary-text-color: var(--dark-theme-secondary-text-color);
+  --error-back-ground-color: var(--dark-theme-error-back-ground-color);
+  --error-text-color: var(--dark-theme-error-text-color);
+}
+
+
+*, *::before,*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0 solid transparent;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  font-size: 16px;
+  text-rendering: optimizeSpeed;
+  background-color: var(--primary-color);
+  color: var(--primary-text-color);
+}
+
+main {
+  flex-grow: 1;
+}
+
+.app_container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.divider {
+  border: 1px solid var(--border-color);
+}
+
+.auth-form__center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.authentication-form__container {
+  width: 400px;
+  padding: 2rem;
+  margin: auto;
+  background-color: var(--secondary-color);
+  border-radius: var(--border-radius);
+}
+
+.auth-form__title {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.auth-form__group:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.auth-form__group > label {
+  display: block;
+  width: 100%;
+}
+
+.auth-form__group > :not(:last-child) {
+  margin-bottom: 0.2rem;
+}
+
+.authentication-form__container > .divider{
+  margin-bottom: 1rem;
+}
+
+.auth__secondary-text {
+  font-size: 1.1rem;
+  color: var(--secondary-text-color);
+}

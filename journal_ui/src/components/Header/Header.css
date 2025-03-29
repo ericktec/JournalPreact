@@ -1,0 +1,30 @@
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem;
+    background-color: var(--secondary-color);
+    align-items: center;
+}
+
+.navbar__app {
+
+}
+
+.navbar__menu {
+    display: flex;
+}
+
+.navbar__menu > a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.5rem;
+}
+
+.navbar__menu > a:hover{ 
+    background-color: var(--tertiary-color);
+}
+
+
+.navbar__menu > a.active {
+    color: var(--secondary-text-color);
+}

@@ -1,0 +1,7 @@
+ericktec80@gmail.com
+Fantasmal84
+Erick123!
+
+
+certificates:
+passphrase: erick123

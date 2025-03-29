@@ -1,0 +1,32 @@
+.btn {
+    padding: 0.5rem;
+    cursor: pointer;
+} 
+.btn-solid  {
+    background-color: var(--secondary-color);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+}
+
+.btn-full-width {
+    display: block;
+    width: 100%;
+}
+
+.btn-solid.btn-success {
+    background-color: var(--dark-theme-success-color);
+}
+
+.btn-solid.btn-danger {
+    background-color: var(--dark-theme-error-text-color);
+}
+
+.btn-with-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem
+}

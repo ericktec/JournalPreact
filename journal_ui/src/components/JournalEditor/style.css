@@ -1,0 +1,33 @@
+pre {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+[contenteditable]:focus {
+  padding: 0.4rem 0.2rem;
+  outline: 0;
+  border: 1px solid rgba(228, 228, 255, 0.4); 
+}
+
+
+[contenteditable][placeholder]:empty:before {
+  content: attr(placeholder);
+  color: #bababa;
+}
+
+.journalEditor__container {
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+
+
+code > {
+  background-color: black;
+}
+
+.btn-save {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+}

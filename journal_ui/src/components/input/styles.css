@@ -1,0 +1,84 @@
+:root {
+    --dark-theme-input-background-color: #61677A;
+
+    --input-background-color: var(--dark-theme-input-background-color);
+}
+
+
+input {
+    background-color: var(--input-background-color);
+    padding: 0.8rem 0.5rem;
+    outline: none;
+    border-radius: var(--border-radius);
+}
+
+
+input:focus,
+input:focus ~ * {
+    border: 3px solid;
+}
+
+input:focus {
+    border-right: 0;
+}
+
+input:focus ~ * {
+    border-left: 0;
+}
+
+input.valid,
+input.valid ~ * {
+    border-color: var(--primary-success-color);
+}
+
+
+input.invalid,
+input.invalid ~ * {
+    border-color: red;
+}
+
+input.full-width {
+   display: block; 
+   width: 100%;
+}
+
+.input__container {
+    display: flex;
+}
+
+.input__container.input__container-img > input {
+    border-end-end-radius: 0;
+    border-start-end-radius: 0; 
+}
+
+.input-image-btn,
+.input-image {
+    border-end-end-radius: var(--border-radius);
+    border-start-end-radius: var(--border-radius);
+    background-color: var(--input-background-color);
+}
+
+.input-image-btn {
+    cursor: pointer;
+}
+
+.input-image-btn > .input-image {
+    background-color: transparent;
+}
+
+.input-image-btn:hover {
+    background-color: var(--tertiary-color);
+}
+
+.input-image, .input-image-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.5rem;
+}
+
+.input-image > *, .input-image-btn > * {
+    color: var(--primary-text-color);
+    width: 2rem;
+    height: 100%;
+}

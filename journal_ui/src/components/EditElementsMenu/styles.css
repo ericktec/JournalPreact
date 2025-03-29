@@ -1,0 +1,40 @@
+.EditElementsMenu__container {
+    display: flex;
+    user-select: none;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    max-width: max-content;
+    border: 1px solid #ffff;
+    max-height: 15rem;
+    overflow: auto;
+    height: auto;
+    transform-origin: top;
+    transform: scaleY(1);
+    position: absolute;
+    transform: translateX(-100%);
+}
+
+.EditElementsMenu__container.hidden {
+    height: 0;
+    transform: scaleY(0);
+}
+
+.EditElementsMenu-input {
+    padding: 0.6rem 0.4rem;
+}
+
+.EditElementMenu-item__container {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+}
+
+.EditElementMenu-item__container:hover {
+    background-color: var(--primary-color);
+}
+
+.EditElementMenu-img {
+    width: 40px;
+}

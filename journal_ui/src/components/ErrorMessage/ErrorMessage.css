@@ -1,0 +1,16 @@
+.error__container {
+    display: flex;
+    padding: 1rem 1rem;
+    background-color: var(--error-back-ground-color);
+    gap: 0.3rem;
+    align-items: flex-start;
+}
+
+.error-message {
+    font-weight: bold;
+    color: var(--error-text-color);
+    flex: 1;
+    line-height: 2rem;
+    text-wrap: wrap;
+    line-break: anywhere;
+}

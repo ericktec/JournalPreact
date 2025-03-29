@@ -1,0 +1,29 @@
+.sidebar__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-item {
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.sidebar-item--active {
+    background-color: var(--secondary-color);
+}
+
+.sidebar-item:hover {
+    background-color: var(--tertiary-color);
+}
+
+.journalButtonsModal {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sidebar__message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
